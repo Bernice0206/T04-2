@@ -1,152 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Appliance Energy Consumption</title>
-
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<header>
-    <nav class="navbar">
-
-        <a href="index.html" class="logo">
-            <img src="PowerIcon.png" alt="Power logo">
-        </a>
-
-        <!-- Navigation links -->
-        <div class="nav-links">
-
-            <a href="index.html" class="nav-link">
-                Home
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="PowerIcon.png" alt="Power logo">
             </a>
-
-            <a href="televisions.html" class="nav-link">
-                Televisions
-            </a>
-
-            <a href="about.html" class="nav-link">
-                About Us
-            </a>
-
-        </div>
-
-    </nav>
-</header>
-
-
-<main>
-
-    <!-- Homepage introduction -->
-    <section class="hero">
-
-        <h1>Appliance Energy Consumption</h1>
-
-        <p>
-            Explore energy consumption information for household
-            appliances available in the Australian market.
-        </p>
-
-        <button onclick="exploreTelevisions()">
-            Explore Televisions
-        </button>
-
-    </section>
-
-
-    <!-- General energy information -->
-    <section class="content">
-
-        <h2>Energy Consumption in Australia</h2>
-
-        <p>
-            Household appliances use different amounts of energy
-            depending on their size, technology and usage. Understanding
-            energy consumption can help consumers make informed choices
-            when purchasing appliances.
-        </p>
-
-
-        <div class="cards">
-
-            <div class="card">
-
-                <h3>Energy Rating</h3>
-
-                <p>
-                    Energy ratings help consumers compare the energy
-                    efficiency of different appliances.
-                </p>
-
+            <!-- Navigation links -->
+            <div class="nav-links">
+                <a href="index.html" class="nav-link"> Home </a>
+                <a href="televisions.html" class="nav-link"> Televisions </a>
+                <a href="about.html" class="nav-link"> About Us </a>
             </div>
+        </nav>
+    </header>
 
+    <h1>Appliance Energy Consumption</h1>
+    
+    <div id="content"></div>
 
-            <div class="card">
+    <!-- Give the SVG a size so shapes can be seen -->
+    <svg width="300" height="150"></svg>!
 
-                <h3>Power Consumption</h3>
+    <!-- Footer -->
+    <footer>
+        <p> &copy; 2026 Bernice Liu | GenAI acknowledgement: GitHub Copilot were used to assist with code and content. </p>
+    </footer>
 
-                <p>
-                    Different appliances can have different power
-                    consumption depending on their features and size.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>Australian Market</h3>
-
-                <p>
-                    This website focuses on appliance energy information
-                    for products available in Australia.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Television data preview -->
-    <section class="content">
-
-        <h2>Explore Our Television Data</h2>
-
-        <p>
-            Visit the Televisions page to learn more about television
-            energy consumption and explore findings from the Australian
-            television dataset.
-        </p>
-
-    </section>
-
-</main>
-
-
-<!-- Footer -->
-<footer>
-
-    <p>
-        &copy; 2026 Bernice Liu | GenAI acknowledgement:
-        ChatGPT and GitHub Copilot were used to assist with code and content.
-    </p>
-
-</footer>
-
-
-<script src="script.js"></script>
-<!-- Give the SVG a size so shapes can be seen -->
-<svg width="300" height="150"></svg>
-<!-- Load D3 first, then your D3 code file -->
-<script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="energy-d3.js"></script>
+    <script src="https://d3js.org"></script>
+    <script src="energy-d3.js"></script>
 
 </body>
 </html>
