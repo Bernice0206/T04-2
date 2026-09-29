@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8f7;
+    color: #263238;
+    line-height: 1.6;
+}
+
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0b5d5e;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* Power logo */
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.logo:hover {
+    transform: scale(1.08);
+}
+
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+
+/* Mouse-over feedback */
+.nav-link:hover {
+    background-color: #74c7c8;
+    color: #123333;
+}
+
+
+/* Current page feedback */
+.nav-link.active {
+    background-color: white;
+    color: #0b5d5e;
+    font-weight: bold;
+}
+
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background-color: #d9eeee;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #0b5d5e;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+}
+
+
+/* Hero button */
+.hero button {
+    background-color: #0b5d5e;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: #074546;
+    transform: translateY(-2px);
+}
+
+
+/* Main content */
+.content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.content h2 {
+    color: #0b5d5e;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.content > p {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    min-height: 180px;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #0b5d5e;
+    margin-bottom: 12px;
+}
+
+
+/* T03 Data Story Introduction */
+.story-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.story-intro p {
+    margin-bottom: 15px;
+}
+
+
+/* T03 Chart sections */
+.chart-container {
+    background-color: white;
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h3 {
+    color: #0b5d5e;
+    margin-bottom: 20px;
+}
+
+.chart-container img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.chart-container p {
+    max-width: 750px;
+    margin: auto;
+}
+
+
+/* T03 Key Finding */
+.finding {
+    max-width: 750px;
+    margin: 20px auto 0;
+    padding: 15px 20px;
+    background-color: #d9eeee;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.finding strong {
+    color: #0b5d5e;
+}
+
+.finding p {
+    margin-top: 5px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #0b5d5e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* Responsive layout */
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .content {
+        padding: 40px 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .chart-container {
+        padding: 20px;
+    }
+
+    .chart-container h3 {
+        font-size: 20px;
+    }
+}
